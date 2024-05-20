@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="snake.css">
+</head>
+<body>
+
+    <div class = "light_wrapper">
+        <div style="font-size: 30px;">WASD/buttons for movement</div>
+        <div class = "giant_font"><span>Score:</span>
+            <span id = "score">--</span>
+    </div>
+    <canvas id="gameCanvas" width="1000" height="500"></canvas>
+    <div id = "buttons">
+        <div style = "display:block">
+        <button class = "blue_button" onclick = "directions('up')">↑</button>
+            <div>
+        <button class = "blue_button" onclick = "directions('left')">←</button>
+        <span id = "noneButton"></span>
+        <button class = "blue_button" onclick = "directions('right')">→</button></div>
+        <button class = "blue_button" onclick = "directions('down')">↓</button></div>
+    <div><a href="../index.html"><button class = "red_button">←Back</button></a></div><br><br></div>
+</div>
+    <script src="snake.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+canvas{
+    background-image:none;
+    margin:10px auto;
+    border:2px black solid;
+    border-radius: 10px;
+    cursor:url('cursor.cur'), auto;
+
+}
+.red_button{
+    cursor:pointer;
+    margin-bottom: 60px;margin:5px;
+    height:40px;width:150px;
+    color:white;
+    background-color:red;
+    box-shadow: 0px 15px rgb(109, 0, 0);
+    border-radius: 15px;
+    transition-duration: 0.1s;
+    font-size:15px;}
+.red_button:hover{
+    transform: translateY(-1px);
+    box-shadow: 0px 16px rgb(159, 0, 0);
+    background-color:red;
+    height:40px;width:150px;}
+.red_button:active{
+    background-color:rgb(225, 0, 0);
+    transform: translateY(10px);
+    height:40px;width:150px;
+    box-shadow: 0px 5px rgb(159, 0, 0);}
+.light_wrapper{
+    padding-top:50px;
+        box-shadow:5px 5px grey;
+        min-height: 600px;
+        min-width: 600px;
+        margin-left: 200px;margin-right: 200px;
+        border: 6px double black;
+        border-radius: 15px;
+        text-align: center;
+        background-color: white;
+
+
+}

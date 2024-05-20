@@ -1,0 +1,91 @@
+#row1,#row2{
+    display:flex;
+    margin:50px;
+    justify-content: space-evenly;
+}
+#home{
+    margin:auto;
+    padding:auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+    color:black;
+    text-shadow:1px 1px 3px white;
+    font-size:125%;
+    width:1400px;
+    height: 270px;
+    background-image: url('./images/crabRave.gif')
+}
+.containers{
+
+    background-color: #6f6f6f;
+    padding:5px;
+    border-radius: 10px;
+    height:300px;
+    width:200px;
+    font-size:20px;
+    font-family: sans-serif;
+    transition-duration: 0.2s;
+
+}
+a:link{
+    color:black;
+    transition-duration: 1s;
+}
+a:visited{
+    color:black;
+}
+a:hover{
+    color:blue;
+}
+.containers:hover{
+    transform: scale(1.2);
+}
+.containers:active{
+    transform: scale(0.8);
+    opacity:0
+}
+#memoryGame{
+    background-image:url("./images/memoryDisplayPic.png");
+    height:200px;
+    width:200px;
+    border-radius: 10px 10px 0px 0px;
+    margin-bottom:0px;
+}
+#tictactoe{
+    background-image:url("./images/TicTacToe.png");
+    height:200px;
+    width:200px;
+    border-radius: 10px 10px 0px 0px;
+    margin-bottom:0px;
+}
+#coinToss{
+    background-image:url("./images/Coin\ toss.png");
+    height:200px;
+    width:200px;
+    border-radius: 10px 10px 0px 0px;
+    margin-bottom:0px;
+}
+#target{
+    background-image:url("./images/target.png");
+    height:200px;
+    width:200px;
+    border-radius: 10px 10px 0px 0px;
+    margin-bottom:0px;
+}
+#snakeGame{
+    background-image:url("./images/snakeGame.png");
+    height:200px;
+    width:200px;
+    border-radius: 10px 10px 0px 0px;
+    margin-bottom:0px;
+}
+.info_stuff{
+    padding-top:20px;
+    background-color: #dfdfdf;
+    width:200px;
+    height:80px;
+    border-radius: 0px 0px 10px 10px;
+    text-align:center;
+}
