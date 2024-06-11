@@ -1,4 +1,4 @@
-let pongLocation = {x: 490, y: 240, angle: 75, speed: 5};
+let pongLocation = {x: 490, y: 240, angle: 75, speed: 8};
 let player = {x: 475,y: 450,speed:5}
 let direction
 let cooldown=0
