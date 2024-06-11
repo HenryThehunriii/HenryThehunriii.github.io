@@ -1,0 +1,27 @@
+#instructions{
+    text-align: center;
+    background-color: white;
+    width:90%;
+    margin:auto;
+    padding-bottom: 200px;
+}
+html{
+    background-color: #a6a6a6;
+}
+.underlined{
+    text-decoration: underline;
+    font-weight: 800;
+    font-size: 150%;
+}
+#info{
+    text-align: left;
+    background-color: white;
+    font-size:25px;
+    padding: 50px;
+    font-family:sans-serif
+}
+.points{
+    color:red;
+    background-color: yellow;
+    display:inline
+}

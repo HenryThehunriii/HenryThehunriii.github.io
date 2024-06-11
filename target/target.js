@@ -9,17 +9,19 @@ canvas.width = 800;
 canvas.height = 550;
 var refreshInterval
 var alive = true;
+let way
 function addTarget()
 {
 	var x = Math.random() * (canvas.width - 40) + 20; // Ensure there's space for the largest radius - CHANGE
 	var y = Math.random() * (canvas.height - 40) + 20;//CHANGE
-	targets.push({ x: x, y: y, radius: 40 }); // Increased radius to fit multiple rings - CHANGE
+	targets.push({ x: x, y: y, radius: 40 ,speed:20, way:'up'}); // Increased radius to fit multiple rings - CHANGE
 }
 
 function drawTargets()
 {
 	ctx.clearRect(0, 0, canvas.width, canvas.height);
-	if(targets.length<3){
+
+	if(targets.length<5){
 		if(score>=75){
 			clearInterval(gameInterval);
 			clearInterval(refreshInterval);
@@ -27,6 +29,46 @@ function drawTargets()
 		}
 	targets.forEach(function(target)
 	{
+		if (target.y<0){
+            target.way='down';
+			target.speed=30
+
+        }
+		else if (target.x<0){
+            target.way='right';
+			target.speed=30
+
+        }
+		else if (target.y>550){
+            target.way='up';
+			target.speed=30
+
+        }
+		else if (target.x>800){
+            target.way='left';
+			console.log('touch right')
+			target.speed=30
+
+        }
+		if(target.speed==0){
+			directionLst=['left', 'right', 'up', 'down']
+			target.way=directionLst[Math.floor(directionLst.length*Math.random())]
+			target.speed=20
+		}
+		else{
+		if(target.way=='left'){
+			target.x-=4
+		}
+		else if(target.way=='right'){
+            target.x+=4
+        }
+		else if(target.way=='up'){
+            target.y-=4
+        }
+		else if(target.way=='down'){
+            target.y+=4
+        }
+		target.speed-=1}
 
 		// Draw multiple circles for each target - CHANGE; for loop is NEW
 		if(score>=50){
@@ -131,6 +173,7 @@ function drawTargets()
 					ctx.fillStyle = i % 2 == 0 ? '#000' : '#FFF';//create alternating rings - CHANGE
 					ctx.fill();
 			}}
+		
 	});}
 	else{
 		alert("You Lost")
@@ -176,4 +219,4 @@ refreshInterval = setInterval(function()
 {
 
 	drawTargets();
-}, 5); }
+}, 20); }

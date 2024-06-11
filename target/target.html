@@ -3,9 +3,12 @@
 <head>
     <title>Target Click Game</title>
     <link rel="stylesheet" href="target.css">
+    <link rel="icon" href='../images/target.ico'type='images/x-icon'>
 </head>
 <body>
-    <a href="../index.html"><button class = "red_button">←Back</button></a><br><br>
+    <div id="buttonsArea"><a href="../index.html"><button class = "red_button">←Back</button></a>
+        <button class="green_button" onclick="window.location.reload()">Refresh</button></div><br><br>
+
     <div class = "light_wrapper">
     <canvas id="gameCanvas"></canvas>
     

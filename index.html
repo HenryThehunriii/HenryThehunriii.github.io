@@ -3,25 +3,28 @@
     <head>
         <title>Games Collection</title>
         <link rel="stylesheet" href="gameCollection.css">
+        <script src="gameCollection.js"></script>
         <link rel="icon" href='./images/joystick.png' type="image/picture">
     </head>
     <body>
         <div id = "home">
             <h1>Game Collection</h1>
             <h3>2023-2024 school year Science-Tech fair project</h3>
-
+            <div>🟣=0🎫 🔵=1🎫 🔴=2🎫</div>
+            <button style="font-size: 30px;background-color: dodgerblue;" ><a href="instructions.html">Instructions</a></button>
         </div>
+        
         <div id = "row1">
-        <div class = "containers"><a href = "./memory game/Tutorial 3.html">
+        <div class = "containers blueContainer"><a onclick='redirectWeb("./memory game/Tutorial 3.html")'>
             <div id = "memoryGame"></div>
             <div class = "info_stuff">Memory cards:Match the cards
             </div></a></div>
-            <div class = "containers"><a href = "./Coin toss/coin toss.html">
+            <div class = "containers"><a onclick = 'redirectWeb("./Coin toss/coin toss.html")'>
                 <div id = "coinToss"></div>
                 <div class = "info_stuff">Coin Toss:Geuss head or tails
             </div></a></div>
 
-            <div class = "containers"><a href = "./Snake game/Snake game.html">
+            <div class = "containers redContainer"><a onclick = 'redirectWeb("./Snake game/Snake game.html")'>
                 <div id = "snakeGame"></div>
                 <div class = "info_stuff">Snake game: eat the dots
             </div></a></div>
@@ -29,17 +32,28 @@
     </div>
     <div id = "row2">
         <div class = "containers">
-            <a href = "./TicTacToe/TicTacToe.html">
+            <a onclick = 'redirectWeb("./TicTacToe/TicTacToe.html")'>
             <div id = "tictactoe"></div>
             <div class = "info_stuff">Tic tac toe:2 player Tic-Tac-Toe
         </div></a></div>
-        <div class = "containers">
-            <a href = "./target/target.html">
+        <div class = "containers redContainer">
+            <a onclick = 'redirectWeb("./target/target.html")'>
             <div id = "target"></div>
             <div class = "info_stuff">Target game: click on the target
+        </div></a></div>
+        <div class = "containers blueContainer">
+            <a onclick = 'redirectWeb("./Pong game/Pong game.html")'>
+            <div id = "pong"></div>
+            <div class = "info_stuff">Pong game: bounce the ball
         </div></a></div>
     
 
     </div>
+    <div id = "row3">
+        <div class = "containers redContainer">
+            <a onclick = 'redirectWeb("./flappy bird/flappy.html")'>
+            <div id = "flappyBird"></div>
+            <div class = "info_stuff">Simple Flappy Bird: tap to fly
+        </div></a></div>
     </body>
 </html>

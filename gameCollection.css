@@ -1,4 +1,4 @@
-#row1,#row2{
+#row1,#row2,#row3{
     display:flex;
     margin:50px;
     justify-content: space-evenly;
@@ -9,17 +9,18 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+    aspect-ratio: 48/9;
+    width: 100%;
+    
     justify-content: space-evenly;
     color:black;
-    text-shadow:1px 1px 3px white;
-    font-size:125%;
-    width:1400px;
-    height: 270px;
+    text-shadow:-2px -2px 3px white,3px 3px 3px rgb(104, 104, 104);
+    font-size:150%;
     background-image: url('./images/crabRave.gif')
 }
 .containers{
 
-    background-color: #6f6f6f;
+    background-color: rgb(141, 101, 197);
     padding:5px;
     border-radius: 10px;
     height:300px;
@@ -28,6 +29,12 @@
     font-family: sans-serif;
     transition-duration: 0.2s;
 
+}
+.blueContainer{
+    background-color: rgb(0, 116, 186);
+}
+.redContainer{
+    background-color: rgb(248, 49, 47);
 }
 a:link{
     color:black;
@@ -48,6 +55,13 @@ a:hover{
 }
 #memoryGame{
     background-image:url("./images/memoryDisplayPic.png");
+    height:200px;
+    width:200px;
+    border-radius: 10px 10px 0px 0px;
+    margin-bottom:0px;
+}
+#flappyBird{
+    background-image:url("./images/flappy.png");
     height:200px;
     width:200px;
     border-radius: 10px 10px 0px 0px;
@@ -76,6 +90,13 @@ a:hover{
 }
 #snakeGame{
     background-image:url("./images/snakeGame.png");
+    height:200px;
+    width:200px;
+    border-radius: 10px 10px 0px 0px;
+    margin-bottom:0px;
+}
+#pong{
+    background-image:url("./images/pong.png");
     height:200px;
     width:200px;
     border-radius: 10px 10px 0px 0px;

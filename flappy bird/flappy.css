@@ -2,7 +2,7 @@ canvas{
     border-radius: 10px;
     border:blue 3px solid;
     filter:blur(0.25px);
-    background-color: rgb(0, 0, 5);
+    background-image:url('../images/1.png');
 }
 .red_button{
     cursor:pointer;
