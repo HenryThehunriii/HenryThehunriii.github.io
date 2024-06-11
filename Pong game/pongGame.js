@@ -75,7 +75,7 @@ function animate() {
         if(cooldown > 0){
             cooldown-=1
         }
-    requestAnimationFrame(animate);
+
     document.getElementById('score').innerHTML = score
     if(score>=10){
         alert('You win!')
@@ -114,3 +114,4 @@ document.addEventListener('keydown',function(event){
   
   
 })
+let animateInterval = setInterval(animate,20)
