@@ -76,11 +76,11 @@ function checkMatch()
             clearInterval(timerInterval);
             setTimeout(function()
             {
-                if(minutes==0){
-                    alert('Congratulations! You matched all the cards in under 1 minute!');
+                if(minutes*60+seconds<=40){
+                    alert('Congratulations! You matched all the cards in under 40 seconds!');
                 }
                 else{
-                    alert("You took more that one minute, you lost")
+                    alert("You took more that 40sec, you lost")
                 }
             },500)
 }
