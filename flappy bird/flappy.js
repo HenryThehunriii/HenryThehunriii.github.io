@@ -45,7 +45,7 @@ function animateBird(){
 
     document.getElementById('score').innerHTML=score
     if(alive==true){
-        if(score>=2000){
+        if(score>=1500){
             alert('You Won')
             alive=false
             clearInterval(pipeGeneration)
