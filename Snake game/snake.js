@@ -101,10 +101,10 @@ function drawScreen(){
     if(score!='Game Over'){
     score = snakeLength-3
 
-    if(score>=30){
+    if(score>=20){
         document.getElementById('score').style.color="blue"
     }
-    else if(score>=20){
+    else if(score>=15){
         document.getElementById('score').style.color="green"
     }
     else if(score>=10){
@@ -149,7 +149,7 @@ function checkCollision(){
     if(snakeBody[0].x<0 || snakeBody[0].y<0 || snakeBody[0].x>(gameCanvas.width)|| snakeBody[0].y>(gameCanvas.height)){
         clearInterval(drawInterval)
         clearInterval(moveInterval)
-        if(score>30){
+        if(score>=25){
             alert('Congratulations! You more than 30 points!')
             document.getElementById('score').style.color="lightgreen"
         }
