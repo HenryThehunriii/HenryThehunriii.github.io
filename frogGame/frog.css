@@ -1,0 +1,65 @@
+html{
+    background-image: url("./images/mangrove_planks.png");
+
+    image-rendering: pixelated;
+}
+#mainContainer{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+canvas{
+    width: 1280px;
+    height: 720px;
+
+}
+#controlBar{
+    width:640px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 96px;
+    height: 96px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: Arial;
+    font-size: 24px;
+    text-shadow: black 1px 1px 1px;
+    text-decoration: none;
+    font-weight: bold;
+    image-rendering: pixelated;
+    vertical-align: middle;
+}
+
+#difficulty {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 240px;
+    height: 80px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: Arial;
+    font-size: 24px;
+    text-shadow: black 1px 1px 1px;
+    text-decoration: none;
+    font-weight: bold;
+    image-rendering: pixelated;
+    vertical-align: middle;
+    background-image: url("./images/button.png");
+}
+#rules{
+    background-image: url("./images/rulebookButton.png");
+}
+#feedback{
+        background-image: url("./images/feedbackButton.png");
+        font-size:16px;
+}
